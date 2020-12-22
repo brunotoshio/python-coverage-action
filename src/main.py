@@ -2,9 +2,9 @@ import json
 import os
 
 
-filename = os.getenv(INPUT_FILENAME)
+file_path = os.getenv(INPUT_FILE_PATH)
 
-with open(filename, 'r') as f:
+with open(file_path, 'r') as f:
     data = json.load(f)
 
 string_content = f'## Total coverage: {data["totals"]["percent_covered"]:.2f}'
