@@ -4,7 +4,7 @@ import os
 
 
 logging.error(os.getcwd())
-file_path = os.getenv(INPUT_FILE_PATH)
+file_path = os.getenv(INPUT_FILEPATH)
 
 with open(file_path, 'r') as f:
     data = json.load(f)
