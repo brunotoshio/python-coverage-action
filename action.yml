@@ -6,6 +6,12 @@ inputs:
   filepath:
     required: true
     description: Path of the file containing the coverage report (json)
+  threshold_bad:
+    required: false
+    description: the upper threshold for bad coverage
+  threshold_acceptable:
+    required: false
+    description: the upper threshold for acceptable coverage
 outputs:
   result:
     description: The string content of the generated markdown file
