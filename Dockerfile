@@ -1,5 +1,5 @@
-FROM python:3.8.5-slim
+FROM python:3.6-alpine
 
 COPY ./src/ .
 
-ENTRYPOINT ['python', 'main.py']
+ENTRYPOINT ["python", "main.py"]
