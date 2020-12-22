@@ -1,7 +1,9 @@
 import json
+import logging
 import os
 
 
+logging.info(os.getcwd())
 file_path = os.getenv(INPUT_FILE_PATH)
 
 with open(file_path, 'r') as f:
