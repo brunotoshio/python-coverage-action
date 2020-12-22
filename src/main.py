@@ -18,6 +18,6 @@ elif float(data["totals"]["percent_covered"]) < threshold_acceptable:
 else:
     quality = ':tada: :sunglasses: :tada: :sunglasses: :tada: :sunglasses: :tada: :sunglasses:'
 
-string_content = f'{quality} ## Total coverage: {data["totals"]["percent_covered"]:.2f}'
+string_content = f'## Total coverage: {data["totals"]["percent_covered"]:.2f} {quality}'
 
 print(f'::set-output name=result::{string_content}')
