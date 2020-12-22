@@ -1,5 +1,5 @@
 FROM python:3.6-alpine
 
-COPY ./src/ .
+COPY ./src/ ./action/
 
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python", "action/main.py"]
