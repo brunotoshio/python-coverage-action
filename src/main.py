@@ -3,7 +3,10 @@ import logging
 import os
 
 
-logging.info(os.getcwd())
+_logger = logging.getLogger('python-coverage-action')
+
+
+_logger.info(os.getcwd())
 file_path = os.getenv(INPUT_FILE_PATH)
 
 with open(file_path, 'r') as f:
