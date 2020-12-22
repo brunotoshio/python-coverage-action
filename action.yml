@@ -9,9 +9,11 @@ inputs:
   threshold_bad:
     required: false
     description: the upper threshold for bad coverage
+    default: '70'
   threshold_acceptable:
     required: false
     description: the upper threshold for acceptable coverage
+    default: '90'
 outputs:
   result:
     description: The string content of the generated markdown file
