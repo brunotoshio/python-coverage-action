@@ -14,9 +14,15 @@ inputs:
     required: false
     description: the upper threshold for acceptable coverage
     default: '90'
+  threshold_pass:
+    required: false
+    description: the minimum coverage required to be approved to merge
+    default: '70'
 outputs:
   result:
     description: The string content of the generated markdown file
+  passed:
+    description: The minimum coverage is achieved or not
 runs:
   using: 'docker'
   image: 'Dockerfile'
